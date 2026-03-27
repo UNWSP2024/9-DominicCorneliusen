@@ -12,6 +12,7 @@ while not isNumberValid:
         print("Sorry, you have to choose a number between 1 and 1000. \n Please try again.")
         randomNumberCount = int(input("Enter the number of random numbers you want (1-1000): "))
     else:
+        randomNumberCount += 1
         isNumberValid = True
 with open(fileName, "w") as newFile:
     for number in range(1, randomNumberCount):
